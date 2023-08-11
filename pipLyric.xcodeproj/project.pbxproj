@@ -16,6 +16,8 @@
 		000251542A7F609700EB732F /* pipLyricTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000251532A7F609700EB732F /* pipLyricTests.swift */; };
 		0002515E2A7F609700EB732F /* pipLyricUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002515D2A7F609700EB732F /* pipLyricUITests.swift */; };
 		000251602A7F609700EB732F /* pipLyricUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002515F2A7F609700EB732F /* pipLyricUITestsLaunchTests.swift */; };
+		00E20D212A867A4F0015E90D /* WebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E20D202A867A4F0015E90D /* WebKitViewController.swift */; };
+		00E20D242A867A8D0015E90D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E20D232A867A8C0015E90D /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		000251592A7F609700EB732F /* pipLyricUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pipLyricUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0002515D2A7F609700EB732F /* pipLyricUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pipLyricUITests.swift; sourceTree = "<group>"; };
 		0002515F2A7F609700EB732F /* pipLyricUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pipLyricUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00E20D202A867A4F0015E90D /* WebKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitViewController.swift; sourceTree = "<group>"; };
+		00E20D232A867A8C0015E90D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E20D242A867A8D0015E90D /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,7 @@
 				000251522A7F609700EB732F /* pipLyricTests */,
 				0002515C2A7F609700EB732F /* pipLyricUITests */,
 				0002513B2A7F609300EB732F /* Products */,
+				00E20D222A867A8B0015E90D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +104,7 @@
 		0002513C2A7F609300EB732F /* pipLyric */ = {
 			isa = PBXGroup;
 			children = (
+				00E20D1F2A8679E30015E90D /* View */,
 				0002513D2A7F609300EB732F /* pipLyricApp.swift */,
 				0002513F2A7F609300EB732F /* ContentView.swift */,
 				000251412A7F609700EB732F /* Assets.xcassets */,
@@ -131,6 +138,22 @@
 				0002515F2A7F609700EB732F /* pipLyricUITestsLaunchTests.swift */,
 			);
 			path = pipLyricUITests;
+			sourceTree = "<group>";
+		};
+		00E20D1F2A8679E30015E90D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00E20D202A867A4F0015E90D /* WebKitViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00E20D222A867A8B0015E90D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00E20D232A867A8C0015E90D /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +289,7 @@
 				000251472A7F609700EB732F /* Persistence.swift in Sources */,
 				0002514A2A7F609700EB732F /* pipLyric.xcdatamodeld in Sources */,
 				000251402A7F609300EB732F /* ContentView.swift in Sources */,
+				00E20D212A867A4F0015E90D /* WebKitViewController.swift in Sources */,
 				0002513E2A7F609300EB732F /* pipLyricApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pipLyric/Preview Content\"";
+				DEVELOPMENT_TEAM = 2K6W957237;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -453,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pipLyric/Preview Content\"";
+				DEVELOPMENT_TEAM = 2K6W957237;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

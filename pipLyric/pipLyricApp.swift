@@ -13,8 +13,7 @@ struct pipLyricApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            WebView(loardUrl: URL(string: "https://music.apple.com/jp/browse")!)
         }
     }
 }
